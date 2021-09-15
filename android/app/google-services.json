@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "404934253873",
+    "project_id": "hostelms-1c414",
+    "storage_bucket": "hostelms-1c414.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404934253873:android:01ef65809728736b862410",
+        "android_client_info": {
+          "package_name": "com.example.hostelm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404934253873-sg3jpj1omrrfqcv7vhkdamrqkqkcus2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hostelm",
+            "certificate_hash": "c3ebea021daf252e25c6e9936e1b0ce2dc179c38"
+          }
+        },
+        {
+          "client_id": "404934253873-fpu9o21uvstksvn89eq5ouqjbdhoi8st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOaUqnEZAsi5GAWP6WLfNrDkNb81Ue5II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404934253873-fpu9o21uvstksvn89eq5ouqjbdhoi8st.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
