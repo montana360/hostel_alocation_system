@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hostelm/pages/signuppage.dart';
-import 'package:hostelm/pages/studenthome.dart';
+import 'package:hostelm/pages/adminpage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key key}) : super(key: key);
@@ -167,7 +167,7 @@ class _LoginPageState extends State<LoginPage> {
           .then((uid) => {
                 Fluttertoast.showToast(msg: "Login Successful"),
                 Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => studentHome())),
+                    MaterialPageRoute(builder: (context) => adminHome())),
               })
           .catchError((e) {
         Fluttertoast.showToast(msg: e.message);

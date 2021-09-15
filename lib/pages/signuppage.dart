@@ -3,7 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hostelm/model/user_model.dart';
-import 'package:hostelm/pages/studenthome.dart';
+// import 'package:hostelm/pages/studenthome.dart';
+import 'package:hostelm/pages/login_page.dart';
 
 class SignupPage extends StatefulWidget {
   SignupPage({Key key}) : super(key: key);
@@ -177,7 +178,7 @@ class _SignupPageState extends State<SignupPage> {
       obscureText: true,
       validator: (value) {
         if (confirmPasswordEditingController.text !=
-            passwordEditingController.text ) {
+            passwordEditingController.text) {
           return "Password dont match";
         }
         return null;
@@ -309,7 +310,7 @@ class _SignupPageState extends State<SignupPage> {
 
     Navigator.pushAndRemoveUntil(
         (context),
-        MaterialPageRoute(builder: (context) => studentHome()),
+        MaterialPageRoute(builder: (context) => LoginPage()),
         (route) => false);
   }
 }
