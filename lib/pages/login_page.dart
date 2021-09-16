@@ -14,6 +14,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   // form key
   final _formKey = GlobalKey<FormState>();
+  bool _obscureText = true;
 
   // editing controller
   final TextEditingController emailController = new TextEditingController();
@@ -57,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
     final passwordfield = TextFormField(
       autofocus: false,
       controller: passwordController,
-      obscureText: true,
+      obscureText: _obscureText,
       validator: (value) {
         RegExp regex = new RegExp(r'^.{6,}$');
         if (value.isEmpty) {
@@ -73,6 +74,16 @@ class _LoginPageState extends State<LoginPage> {
       textInputAction: TextInputAction.done,
       decoration: InputDecoration(
         prefixIcon: Icon(Icons.vpn_key),
+        suffixIcon: GestureDetector(
+          onTap: () {
+            setState(() {
+              _obscureText = !_obscureText;
+            });
+          },
+          child: Icon(
+            _obscureText? Icons.visibility 
+            : Icons.visibility_off)
+        ),
         contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: "Password",
         border: OutlineInputBorder(
