@@ -8,14 +8,15 @@ class UserModel {
   UserModel(
       {this.uid, this.email, this.firstName, this.secondName, this.phone});
 
-  //  data from the server
+  // receiving data from server
   factory UserModel.fromMap(map) {
     return UserModel(
-        uid: map["uid"],
-        email: map["email"],
-        firstName: map["firstName"],
-        secondName: map["secondName"],
-        phone: map["phone"]);
+      uid: map['uid'],
+      email: map['email'],
+      firstName: map['firstName'],
+      secondName: map['secondName'],
+      phone: map['phone'],
+    );
   }
 
   // sending data to our server
